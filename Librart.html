@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <script>
+
+        class library {
+            constructor(arr) {
+                this.arr = arr;
+            }
+
+            collectionBook() {
+
+                this.arr = ["Gombrich A Little History", "The Catcher In Rye", ""]
+                console.log(this.arr);
+            }
+            addBook() {
+                console.log("After Adding Book");
+                console.log("Collection Of Books =", this.arr.push("computer"));
+                console.log(this.arr );
+            }
+            removeBook() {
+                console.log("After Removing Book");
+                this.arr.splice(0, 1);
+                console.log("Collection of Books =", this.arr.length);
+                console.log(this.arr);
+            }
+        }
+
+        let c1 = new library
+        c1.collectionBook()
+        c1.addBook()
+        c1.removeBook()
+    </script>
+</body>
+</html>
